@@ -1,7 +1,7 @@
-import './css/styles.css';
+import '../css/styles.css';
 import debounce from 'lodash.debounce';
 import Notiflix from 'notiflix';
-import { fetchCountries } from './js/fetch-countries';
+import { fetchCountries } from './fetch-countries';
 
 const DEBOUNCE_DELAY = 300;
 
@@ -28,10 +28,6 @@ function onChangeInput(event) {
         renderCountrysList(countries);
         return;
       }
-
-      // if (countryName === '') {
-      //   return;
-      // }
 
       renderCountryInfo(countries);
     })
